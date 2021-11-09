@@ -1,1 +1,1 @@
-#Kod z VS
+# Kod z VS
