@@ -1,1 +1,1 @@
-# Kod z VS
+# Kod z Arduino wraz z komentarzami
