@@ -89,6 +89,8 @@ Do GND podłączamy przewód, który razem z dwoma przewodami GND z ledów łąc
 
 Do Plusa we wtyku DC łączymy przewody oznaczone 5V z ledów i następnie zaciskamy przewody dokręcając w miejsach na śrubokręt.
 
+Z racji, że nasz pasek ledów jest dosyć długi, to aby zapobiec potencjalnym spadkom napięcia, zasilanie podłączamy na początku i na końcu paska ledów.
+
 Poniżej zilustrowanie tego jak powinno to wszystko wyglądać:
 
 ![img](./image/ArduinoPodlaczenie.jpg)
