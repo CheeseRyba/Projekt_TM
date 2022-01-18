@@ -11,17 +11,17 @@ Do stworzenia tego projektu, będą nam potrzebne następujące rzeczy:
 Wybrałem Arduino Nano, ze względu na mały rozmiar oraz na to, że nie będę potrzebował jakiś wygórowanych opcji, które bym dostał na droższych modułach
 Poniżej jest zdjęcie zamontowanego już arduino no na płytce stykowej, wraz z podłączonymi przewodami.
 
-[Link Arduino Nano] (https://allegro.pl/oferta/arduino-nano-3-0-atmega328-ch340-zlutowany-9707989894?bi_s=ads&bi_m=listing%3Adesktop%3Aquery&bi_c=ZDgxYzMzZWUtZTI5Yy00ZTVmLWJhNzEtYTU0MjJiNTljM2NlAA&bi_t=ape&referrer=proxy&emission_unit_id=a99c8f92-5694-4c26-ae90-f4c5b26b45cc)
+[Link Arduino Nano](https://allegro.pl/oferta/arduino-nano-3-0-atmega328-ch340-zlutowany-9707989894?bi_s=ads&bi_m=listing%3Adesktop%3Aquery&bi_c=ZDgxYzMzZWUtZTI5Yy00ZTVmLWJhNzEtYTU0MjJiNTljM2NlAA&bi_t=ape&referrer=proxy&emission_unit_id=a99c8f92-5694-4c26-ae90-f4c5b26b45cc)
 
-[Link płytka stykowa] (https://allegro.pl/oferta/prototypowa-plytka-listwa-stykowa-170-pol-biala-fv-7687474291)
+[Link płytka stykowa](https://allegro.pl/oferta/prototypowa-plytka-listwa-stykowa-170-pol-biala-fv-7687474291)
 
-[Link przewody] (https//allegro.pl/oferta/przewody-mesko-meskie-40szt-kable-zworki-arduino-7146184281?fromVariant=7175484876)
+[Link przewody](https//allegro.pl/oferta/przewody-mesko-meskie-40szt-kable-zworki-arduino-7146184281?fromVariant=7175484876)
 
 ![img](./zdjęcia/Mikrokontroler i na płytce stykowej.jpg)
 
 -Diody WS2812B 60d/m:
 z racji, że po zmierzeniu obwodu mojego monitora otrzymałem 231cm to należało zakupić 3 metry. Dla bardziej estetycznego wyglądu światełek wybrałem wersję gdzie jest 60 diód na metr
-[Link diody] (https://allegro.pl/oferta/adresowalna-tasma-led-ws2812b-60d-m-ip65-cyfrowa-10576030891)
+[Link diody](https://allegro.pl/oferta/adresowalna-tasma-led-ws2812b-60d-m-ip65-cyfrowa-10576030891)
 ![img](./zdjęcia/Ledy.jpg)
 
 -Zasilacz 5V 10A:
@@ -29,17 +29,17 @@ Aby wybrać odpowiedni zasilacz potrzebujemy najpierw znać parę rzeczy, takie 
 Ze strony producenta wiemy, że wymagane napięcie wynosi 5V. Natomiast aby obliczyć zapotrzebowanie prądowe należe posłużyć się informacją, że
 te ledy dla 60diód na metr potrzebują 18W. Wymiary naszej taśmy to około 2.3m, co daje nam 18*2.3= 41.4W, gdzie przy napięciu 5V potrzebować będziemy 
 co najmniej zasilacza o natężeniu 41.4/5=8.28A, należy wybierać zasilacz z zapasem, dlatego wybrałem zasilacz o napięciu 5V i 10A.
-[Link zasilacz] (https://www.amazon.pl/gp/product/B083QNN7Z7/ref=ox_sc_act_title_1?smid=A35F3I9APUKQP4&psc=1)
+[Link zasilacz](https://www.amazon.pl/gp/product/B083QNN7Z7/ref=ox_sc_act_title_1?smid=A35F3I9APUKQP4&psc=1)
 ![img](./zdjęcia/Zasilacz.jpg)
 
 -Wtyk DC damski:
 Aby zasilić nasze ledy, będziemy potrzebować wtyku DC, który pozwoli nam za pomocą przewodów podłączyć zasilacz do ledów oraz Arduino.
-[Link wtyk DC] (https://allegro.pl/oferta/wtyk-dc-5-5mm-x-2-1mm-damski-10661156959)
+[Link wtyk DC](https://allegro.pl/oferta/wtyk-dc-5-5mm-x-2-1mm-damski-10661156959)
 ![img](./zdjęcia/WtykDC.jpg)
 
 -Złączki taśmowe:
 Ostatnie co nam będzie potrzebne to złączki taśmowe 90 stopni, które pozwolą nam połączyć paski ledów bez potrzeby lutowania.
-[link złączki] (https://allegro.pl/oferta/zlaczka-katowa-tasma-argb-3pin-led-10mm-10537936829?reco_id=e1381319-56f4-11ec-a45c-e43d1a028500&sid=3ec404f37aa2fad6253fa5dd6bb023427743f77ee2f01bb84454c4701b8c0118)
+[link złączki](https://allegro.pl/oferta/zlaczka-katowa-tasma-argb-3pin-led-10mm-10537936829?reco_id=e1381319-56f4-11ec-a45c-e43d1a028500&sid=3ec404f37aa2fad6253fa5dd6bb023427743f77ee2f01bb84454c4701b8c0118)
 ![img](./zdjęcia/Złączki.jpg)
 
 #Schemat projektu w Eagle:
@@ -302,7 +302,7 @@ Filmik z domowej roboty Ambilight :
 -Ledy nie gasną przy wyłączeniu się komputera:
 Rozwiązanie: dokupiłem Huba Usb z przyciskiem, do którego jest podłączony mikrokontroler, ponieważ jedyny sposób na zresetowanie ledów po wyłączeniu komputera to odpięcie i podpięcie kabla to o wiele wygoniejsze jest po prostu pstryknięcie przycisku.
 ![img](./zdjęcia/Hub.jpg)
-Link Rozdzielacz: https://allegro.pl/oferta/hub-usb-3-0-rozdzielacz-4-porty-usb-rozgaleznik-10569869994?snapshot=MjAyMS0xMi0xM1QxMzozMTozMi42NTlaO2J1eWVyOzI4NjBmMGFkZTRlNmI3MmMzODY1YTg4NTAzNDZiYTBiZWFmNWRjNmUyNGVmMTM0YmFlYmNmODg1MDFkMmYyZGI%3D
+[Link Rozdzielacz](https://allegro.pl/oferta/hub-usb-3-0-rozdzielacz-4-porty-usb-rozgaleznik-10569869994?snapshot=MjAyMS0xMi0xM1QxMzozMTozMi42NTlaO2J1eWVyOzI4NjBmMGFkZTRlNmI3MmMzODY1YTg4NTAzNDZiYTBiZWFmNWRjNmUyNGVmMTM0YmFlYmNmODg1MDFkMmYyZGI%3D)
 
 -Po odłączeniu i podłączeniu mikrokontrolera, program prismatik przestaje działać i należy go zresetować.
 Rozwiązanie: tutaj również rozwiązanie jest tylko półśrodkiem, ponieważ polega na napisaniu krótkiego kodu w powershellu i zbindowania go pod jakiś klawisz myszki, aby był łatwo i szybko dostępny bez potrzeby minusowania tego co się robiło i kasowania i odpalania na nowo programu.
