@@ -297,21 +297,27 @@ void loop() {   //w tej funkcji wywołujemy już nasze wcześniej przygotowane f
     PionowaPulsacja(); //Do wyboru mamy: RainbowSpin(); RainbowPong(); Epilepsja(); Policja(); PionowaPulsacja;
 }
 ```
+# Prezentacja Trybów oświetlenia
+
 Filmik z trybu RainbowSpin():
-Link: 
+
+[RainbowSpin()](https://www.youtube.com/watch?v=jANOv8Sd3G0)
 
 Filmik z trybu RainbowPong():
-Link: 
+
+[RainbowPong()](https://www.youtube.com/watch?v=wXVbYGT99ws)
 
 Filmik z trybu Epilepsja():
-Link: 
+
+[Epilepsja()](https://www.youtube.com/watch?v=L1v-wHVck0c)
 
 Filmik z trybu Policja():
-Link: 
+
+[Policja()](https://www.youtube.com/watch?v=Czy_9tf2JSg)
 
 Filmik z trybu PionowaPulsacja():
-Link: 
 
+[PionowaPulsacja()](https://www.youtube.com/watch?v=WxUyaIaVuDU)
 
 # Alterantywne zastosowanie ledów
 
@@ -356,3 +362,10 @@ Stop-Process -Name "Prismatik" -force
 Start-Process -FilePath "Prismatik"
 ```
 Następnie za pomocą programu Razer Synapse, zbindowałem aby na kliknięciu scrolla odpalał się dany program, czyli skrypt w powershellu
+
+# Prezentacja Oświetlenia Ambilight
+
+Filmik z trybu Ambilight:
+
+[Ambilight](https://www.youtube.com/watch?v=hMHhLH_Tt_Y)
+
