@@ -35,7 +35,7 @@ co najmniej zasilacza o natężeniu 41.4/5=8.28A, należy wybierać zasilacz z z
 -Wtyk DC damski:
 Aby zasilić nasze ledy, będziemy potrzebować wtyku DC, który pozwoli nam za pomocą przewodów podłączyć zasilacz do ledów oraz Arduino.
 [Link wtyk DC](https://allegro.pl/oferta/wtyk-dc-5-5mm-x-2-1mm-damski-10661156959)
-![img](./zdjęcia/WtykDC.jpg)
+![img](./zdjęcia/WtykDCZbliżenie.jpg)
 
 -Złączki taśmowe:
 Ostatnie co nam będzie potrzebne to złączki taśmowe 90 stopni, które pozwolą nam połączyć paski ledów bez potrzeby lutowania.
@@ -63,11 +63,17 @@ Poprzez kabel Usb łączymy Arduino z naszym komputerem, do Pina D6 podłączamy
 Do GND podłączamy przewód, który razem z dwoma przewodami GND z ledów łączymy we wtyku DC.
 Do Plusa we wtyku DC łączymy przewody oznaczone 5V z ledów i następnie zaciskamy przewody dokręcając w miejsach na śrubokręt.
 Poniżej zilustrowanie tego jak powinno to wszystko wyglądać:
+
 ![img](./zdjęcia/ArduinoPodłączenie.jpg)
+
+![img](./zdjęcia/WtykDC.jpg)
+
 Płytkę stykową można przkleić na taśmę dwustronną do tyłu monitora. Tak będzie wyglądać wszystko podłączone:
+
 ![img](./zdjęcia/Mikrokontroler i na płytce stykowej.jpg)
 
 Widok ogólny:
+
 ![img](./zdjęcia/Całość.jpg)
 
 
