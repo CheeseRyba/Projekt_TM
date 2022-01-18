@@ -81,6 +81,8 @@ Będziemy używać Arduino Nano z mikrokontrolerem ATMEGA328
 
 ![img](./image/ArduinoNanoPinout.jpg)
 
+Tutaj znajduje się arkusz danych dla naszego mikrokontrolera ATMEGA328 - [arkusz danych](https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf)
+
 Poprzez kabel Usb łączymy Arduino z naszym komputerem, do Pina D6 podłączamy na płytce stykowej przewód, który następnie będziemy musieli połączyć ze środkowym przewodem w ledach z jednej strony, jest to przewód przez który będziemy wydawać rozkazy ledom
 
 Do GND podłączamy przewód, który razem z dwoma przewodami GND z ledów łączymy we wtyku DC.
