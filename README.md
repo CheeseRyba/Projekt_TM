@@ -107,7 +107,8 @@ Widok ogólny:
 # Kod pięcu trybów ledów wraz z opisem:
 
 ```cp
-#include <FastLED.h>    //załączamy bibliotekę FastLED, ponieważ po  
+#include <FastLED.h>    //załączamy bibliotekę FastLED, aby móc sterować ledami.
+
 #define LED_PIN 6   //definiujemy Pina z którego bedą wysyłane sygnały, w tym przypadku jest do pin D6
 #define NUM_LEDS 124    //podajemy tutaj liczbę ledów, których łącznie jest 124
 
