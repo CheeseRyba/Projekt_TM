@@ -7,7 +7,7 @@ Ledy będzie można zaprogramować w taki sposób aby miały tryby, które są z
 # Lista elementów projektu:
 Do stworzenia tego projektu, będą nam potrzebne następujące rzeczy:
 
--Arduino Nano, płytka stykowa i przewody:
+-Arduino Nano, płytka stykowa i przewody
 
 Wybrałem Arduino Nano, ze względu na mały rozmiar oraz na to, że nie będę potrzebował jakiś wygórowanych opcji, które bym dostał na droższych modułach
 Poniżej jest zdjęcie zamontowanego już arduino no na płytce stykowej, wraz z podłączonymi przewodami.
@@ -20,15 +20,15 @@ Poniżej jest zdjęcie zamontowanego już arduino no na płytce stykowej, wraz z
 
 ![img](./image/MikrokontrolerNaPlytce.jpg)
 
--Diody WS2812B 60d/m:
+-Diody WS2812B 60d/m
 
-Z racji, że po zmierzeniu obwodu mojego monitora otrzymałem 231cm to należało zakupić 3 metry. Dla bardziej estetycznego wyglądu światełek wybrałem wersję gdzie jest 60 diód na metr
+Z racji, że po zmierzeniu obwodu mojego monitora otrzymałem 231cm to należało zakupić 3 metry. Dla bardziej estetycznego wyglądu światełek wybrałem wersję gdzie jest 60 diód na metr.
 
 [Link diody](https://allegro.pl/oferta/adresowalna-tasma-led-ws2812b-60d-m-ip65-cyfrowa-10576030891)
 
 ![img](./image/Ledy.jpg)
 
--Zasilacz 5V 10A:
+-Zasilacz 5V 10A
 
 Aby wybrać odpowiedni zasilacz potrzebujemy najpierw znać parę rzeczy, takie jak: wymagane napięcie diody, jakie jest jej zapotrzebowanie prądowe. 
 Ze strony producenta wiemy, że wymagane napięcie wynosi 5V. Natomiast aby obliczyć zapotrzebowanie prądowe należe posłużyć się informacją, że
@@ -39,7 +39,7 @@ co najmniej zasilacza o natężeniu 41.4/5=8.28A, należy wybierać zasilacz z z
 
 ![img](./image/Zasilacz.jpg)
 
--Wtyk DC damski:
+-Wtyk DC damski
 
 Aby zasilić nasze ledy, będziemy potrzebować wtyku DC, który pozwoli nam za pomocą przewodów podłączyć zasilacz do ledów oraz Arduino.
 
@@ -47,7 +47,7 @@ Aby zasilić nasze ledy, będziemy potrzebować wtyku DC, który pozwoli nam za 
 
 ![img](./image/WtykDCZblizenie.jpg)
 
--Złączki taśmowe:
+-Złączki taśmowe
 
 Ostatnie co nam będzie potrzebne to złączki taśmowe 90 stopni, które pozwolą nam połączyć paski ledów bez potrzeby lutowania.
 
@@ -55,11 +55,11 @@ Ostatnie co nam będzie potrzebne to złączki taśmowe 90 stopni, które pozwol
 
 ![img](./image/Zlaczka.jpg)
 
-#Schemat projektu w Eagle:
+# Schemat projektu w Eagle:
 
 ![img](./image/ArduinoSchemat.jpg)
 
-#Budowa i dalszy opis projektu
+# Budowa i dalszy opis projektu
 
 Najpierw należy odmierzyć pasek ledów, tak aby na górze i po bokach był jeden cały pasek, a na dole monitora były dwa paski o mniej więcej takiej samej długości aby było miejsce na podłączenie wszystkiego do arduino.
 
@@ -102,7 +102,7 @@ Widok ogólny:
 ![img](./image/Calosc.jpg)
 
 
-#Kod pięcu trybów ledów wraz z opisem:
+# Kod pięcu trybów ledów wraz z opisem:
 
 ```cp
 #include <FastLED.h>    //załączamy bibliotekę FastLED, ponieważ po  
@@ -313,7 +313,7 @@ Filmik z trybu PionowaPulsacja():
 Link: 
 
 
-#Alterantywne zastosowanie ledów
+# Alterantywne zastosowanie ledów
 
 Jeszcze jedna bardzo ciekawa możliwość działania tych ledów to jako czujnik koloru Ambilight.
 
@@ -334,7 +334,7 @@ Jeżeli jest to zrobione to możemy raczyć się niesamowitymi efektami świetln
 
 Filmik z domowej roboty Ambilight :
 
-#Napotkane problemy
+# Napotkane problemy
 
 -Ledy nie gasną przy wyłączeniu się komputera:
 
