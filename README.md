@@ -17,7 +17,7 @@ Poniżej jest zdjęcie zamontowanego już arduino no na płytce stykowej, wraz z
 
 [Link przewody](https//allegro.pl/oferta/przewody-mesko-meskie-40szt-kable-zworki-arduino-7146184281?fromVariant=7175484876)
 
-![img](./image/MikrokontrolernNaPlytce.jpg)
+![img](./image/MikrokontrolerNaPlytce.jpg)
 
 -Diody WS2812B 60d/m:
 z racji, że po zmierzeniu obwodu mojego monitora otrzymałem 231cm to należało zakupić 3 metry. Dla bardziej estetycznego wyglądu światełek wybrałem wersję gdzie jest 60 diód na metr
@@ -50,7 +50,7 @@ Ostatnie co nam będzie potrzebne to złączki taśmowe 90 stopni, które pozwol
 
 [link złączki](https://allegro.pl/oferta/zlaczka-katowa-tasma-argb-3pin-led-10mm-10537936829?reco_id=e1381319-56f4-11ec-a45c-e43d1a028500&sid=3ec404f37aa2fad6253fa5dd6bb023427743f77ee2f01bb84454c4701b8c0118)
 
-![img](./image/Zlaczki.jpg)
+![img](./image/Zlaczka.jpg)
 
 #Schemat projektu w Eagle:
 
