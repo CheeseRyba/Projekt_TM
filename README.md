@@ -13,12 +13,12 @@ Poniżej jest zdjęcie zamontowanego już arduino no na płytce stykowej, wraz z
 [Link Arduino Nano] (https://allegro.pl/oferta/arduino-nano-3-0-atmega328-ch340-zlutowany-9707989894?bi_s=ads&bi_m=listing%3Adesktop%3Aquery&bi_c=ZDgxYzMzZWUtZTI5Yy00ZTVmLWJhNzEtYTU0MjJiNTljM2NlAA&bi_t=ape&referrer=proxy&emission_unit_id=a99c8f92-5694-4c26-ae90-f4c5b26b45cc)
 [Link płytka stykowa] (https://allegro.pl/oferta/prototypowa-plytka-listwa-stykowa-170-pol-biala-fv-7687474291)
 [Link przewody] (https//allegro.pl/oferta/przewody-mesko-meskie-40szt-kable-zworki-arduino-7146184281?fromVariant=7175484876)
-![img](zdjęcia/Mikrokontroler i na płytce stykowej.jpg)
+![img](./zdjęcia/Mikrokontroler i na płytce stykowej.jpg)
 
 -Diody WS2812B 60d/m:
 z racji, że po zmierzeniu obwodu mojego monitora otrzymałem 231cm to należało zakupić 3 metry. Dla bardziej estetycznego wyglądu światełek wybrałem wersję gdzie jest 60 diód na metr
 [Link diody] (https://allegro.pl/oferta/adresowalna-tasma-led-ws2812b-60d-m-ip65-cyfrowa-10576030891)
-![img](zdjęcia/Ledy.jpg)
+![img](./zdjęcia/Ledy.jpg)
 
 -Zasilacz 5V 10A:
 Aby wybrać odpowiedni zasilacz potrzebujemy najpierw znać parę rzeczy, takie jak: wymagane napięcie diody, jakie jest jej zapotrzebowanie prądowe. 
@@ -26,45 +26,45 @@ Ze strony producenta wiemy, że wymagane napięcie wynosi 5V. Natomiast aby obli
 te ledy dla 60diód na metr potrzebują 18W. Wymiary naszej taśmy to około 2.3m, co daje nam 18*2.3= 41.4W, gdzie przy napięciu 5V potrzebować będziemy 
 co najmniej zasilacza o natężeniu 41.4/5=8.28A, należy wybierać zasilacz z zapasem, dlatego wybrałem zasilacz o napięciu 5V i 10A.
 [Link zasilacz] (https://www.amazon.pl/gp/product/B083QNN7Z7/ref=ox_sc_act_title_1?smid=A35F3I9APUKQP4&psc=1)
-![img](zdjęcia/Zasilacz.jpg)
+![img](./zdjęcia/Zasilacz.jpg)
 
 -Wtyk DC damski:
 Aby zasilić nasze ledy, będziemy potrzebować wtyku DC, który pozwoli nam za pomocą przewodów podłączyć zasilacz do ledów oraz Arduino.
 [Link wtyk DC] (https://allegro.pl/oferta/wtyk-dc-5-5mm-x-2-1mm-damski-10661156959)
-![img](zdjęcia/WtykDC.jpg)
+![img](./zdjęcia/WtykDC.jpg)
 
 -Złączki taśmowe:
 Ostatnie co nam będzie potrzebne to złączki taśmowe 90 stopni, które pozwolą nam połączyć paski ledów bez potrzeby lutowania.
 [link złączki] (https://allegro.pl/oferta/zlaczka-katowa-tasma-argb-3pin-led-10mm-10537936829?reco_id=e1381319-56f4-11ec-a45c-e43d1a028500&sid=3ec404f37aa2fad6253fa5dd6bb023427743f77ee2f01bb84454c4701b8c0118)
-![img](zdjęcia/Złączki.jpg)
+![img](./zdjęcia/Złączki.jpg)
 
 #Schemat projektu w Eagle:
-![img](zdjęcia/ArduinoSchemat.jpg)
+![img](./zdjęcia/ArduinoSchemat.jpg)
 
 #Budowa i dalszy opis projektu
 Najpierw należy odmierzyć pasek ledów, tak aby na górze i po bokach był jeden cały pasek, a na dole monitora były dwa paski o mniej więcej takiej samej długości aby było miejsce na podłączenie wszystkiego do arduino.
 Następnie móżna przystąpić do klejenia ledów do wcześniej wyczyszczonego monitoram paski ledowe mają na sobie klej co ułatwia montaż. Podczas montażu posłużymy się również złączkami, których zasada działania jest banalnie prosta:
-![img](zdjęcia/ZłączkaZasadaDziałania.jpg)
+![img](./zdjęcia/ZłączkaZasadaDziałania.jpg)
 
 Tak przebiegały etapy montowania Ledów:
-![img](zdjęcia/Dół.jpg)
-![img](zdjęcia/LewyBok.jpg)
-![img](zdjęcia/Góra.jpg)
-![img](zdjęcia/PrawyBok.jpg)
+![img](./zdjęcia/Dół.jpg)
+![img](./zdjęcia/LewyBok.jpg)
+![img](./zdjęcia/Góra.jpg)
+![img](./zdjęcia/PrawyBok.jpg)
 
 Będziemy używać Arduino Nano z mikrokontrolerem ATMEGA328
-![img](zdjęcia/ArduinoNanoPinout.jpg)
+![img](./zdjęcia/ArduinoNanoPinout.jpg)
 
 Poprzez kabel Usb łączymy Arduino z naszym komputerem, do Pina D6 podłączamy na płytce stykowej przewód, który następnie będziemy musieli połączyć ze środkowym przewodem w ledach z jednej strony, jest to przewód przez który będziemy wydawać rozkazy ledom
 Do GND podłączamy przewód, który razem z dwoma przewodami GND z ledów łączymy we wtyku DC.
 Do Plusa we wtyku DC łączymy przewody oznaczone 5V z ledów i następnie zaciskamy przewody dokręcając w miejsach na śrubokręt.
 Poniżej zilustrowanie tego jak powinno to wszystko wyglądać:
-![img](zdjęcia/ArduinoPodłączenie.jpg)
+![img](./zdjęcia/ArduinoPodłączenie.jpg)
 Płytkę stykową można przkleić na taśmę dwustronną do tyłu monitora. Tak będzie wyglądać wszystko podłączone:
-![img](zdjęcia/Mikrokontroler i na płytce stykowej.jpg)
+![img](./zdjęcia/Mikrokontroler i na płytce stykowej.jpg)
 
 Widok ogólny:
-![img](zdjęcia/Całość.jpg)
+![img](./zdjęcia/Całość.jpg)
 
 
 #Kod pięcu trybów ledów wraz z opisem:
@@ -282,13 +282,13 @@ Link:
 Jeszcze jedna bardzo ciekawa możliwość działania tych ledów to jako czujnik koloru Ambilight.
 Aby to zrobić, będziemy potrzebować kodu do arduino Adalight_WS2812, w którym będziemy musieli ustawić odpowiedni pin i liczbe ledów oraz programu Prismatik
 Menu programu Prismatik, w którym widać że jest on ustawiony na screen capture, czyli w zależności od tego co będzie się wyświetlało na ekranie na jego obwodzie to tak sie zaświecą ledy
-![img](zdjęcia/Menu.jpg)
+![img](./zdjęcia/Menu.jpg)
 
 Jedną z opcji podczas konfiguracji jest dobranie strefy dla każdej diody tak aby dany prostokąt jak najbardziej odpowiadał jej położeniu. Im dokładniej się to zrobi tym lepsze będą potem efekty.
-![img](zdjęcia/DobranieWielkości.jpg)
+![img](./zdjęcia/DobranieWielkości.jpg)
 
 Następnie należy również dobrać odpwiednie wartości dla ledów, tak aby na kolorze naszej ściany światło było jak najbardziej białe:
-![img](zdjęcia/DobranieBiałego.jpg)
+![img](./zdjęcia/DobranieBiałego.jpg)
 
 Jeżeli jest to zrobione to możemy raczyć się niesamowitymi efektami świetlnymi w grach oraz podczas korzystania z youtube :)
 
@@ -297,7 +297,7 @@ Filmik z domowej roboty Ambilight :
 #Napotkane problemy
 -Ledy nie gasną przy wyłączeniu się komputera:
 Rozwiązanie: dokupiłem Huba Usb z przyciskiem, do którego jest podłączony mikrokontroler, ponieważ jedyny sposób na zresetowanie ledów po wyłączeniu komputera to odpięcie i podpięcie kabla to o wiele wygoniejsze jest po prostu pstryknięcie przycisku.
-![img](zdjęcia/Hub.jpg)
+![img](./zdjęcia/Hub.jpg)
 Link Rozdzielacz: https://allegro.pl/oferta/hub-usb-3-0-rozdzielacz-4-porty-usb-rozgaleznik-10569869994?snapshot=MjAyMS0xMi0xM1QxMzozMTozMi42NTlaO2J1eWVyOzI4NjBmMGFkZTRlNmI3MmMzODY1YTg4NTAzNDZiYTBiZWFmNWRjNmUyNGVmMTM0YmFlYmNmODg1MDFkMmYyZGI%3D
 
 -Po odłączeniu i podłączeniu mikrokontrolera, program prismatik przestaje działać i należy go zresetować.
