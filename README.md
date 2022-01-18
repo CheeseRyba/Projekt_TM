@@ -10,9 +10,13 @@ Do stworzenia tego projektu, będą nam potrzebne następujące rzeczy:
 -Arduino Nano, płytka stykowa i przewody:
 Wybrałem Arduino Nano, ze względu na mały rozmiar oraz na to, że nie będę potrzebował jakiś wygórowanych opcji, które bym dostał na droższych modułach
 Poniżej jest zdjęcie zamontowanego już arduino no na płytce stykowej, wraz z podłączonymi przewodami.
+
 [Link Arduino Nano] (https://allegro.pl/oferta/arduino-nano-3-0-atmega328-ch340-zlutowany-9707989894?bi_s=ads&bi_m=listing%3Adesktop%3Aquery&bi_c=ZDgxYzMzZWUtZTI5Yy00ZTVmLWJhNzEtYTU0MjJiNTljM2NlAA&bi_t=ape&referrer=proxy&emission_unit_id=a99c8f92-5694-4c26-ae90-f4c5b26b45cc)
+
 [Link płytka stykowa] (https://allegro.pl/oferta/prototypowa-plytka-listwa-stykowa-170-pol-biala-fv-7687474291)
+
 [Link przewody] (https//allegro.pl/oferta/przewody-mesko-meskie-40szt-kable-zworki-arduino-7146184281?fromVariant=7175484876)
+
 ![img](./zdjęcia/Mikrokontroler i na płytce stykowej.jpg)
 
 -Diody WS2812B 60d/m:
