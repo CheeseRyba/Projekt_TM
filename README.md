@@ -8,6 +8,7 @@ Ledy będzie można zaprogramować w taki sposób aby miały tryby, które są z
 Do stworzenia tego projektu, będą nam potrzebne następujące rzeczy:
 
 -Arduino Nano, płytka stykowa i przewody:
+
 Wybrałem Arduino Nano, ze względu na mały rozmiar oraz na to, że nie będę potrzebował jakiś wygórowanych opcji, które bym dostał na droższych modułach
 Poniżej jest zdjęcie zamontowanego już arduino no na płytce stykowej, wraz z podłączonymi przewodami.
 
@@ -20,6 +21,7 @@ Poniżej jest zdjęcie zamontowanego już arduino no na płytce stykowej, wraz z
 ![img](./image/MikrokontrolerNaPlytce.jpg)
 
 -Diody WS2812B 60d/m:
+
 z racji, że po zmierzeniu obwodu mojego monitora otrzymałem 231cm to należało zakupić 3 metry. Dla bardziej estetycznego wyglądu światełek wybrałem wersję gdzie jest 60 diód na metr
 
 [Link diody](https://allegro.pl/oferta/adresowalna-tasma-led-ws2812b-60d-m-ip65-cyfrowa-10576030891)
@@ -27,6 +29,7 @@ z racji, że po zmierzeniu obwodu mojego monitora otrzymałem 231cm to należał
 ![img](./image/Ledy.jpg)
 
 -Zasilacz 5V 10A:
+
 Aby wybrać odpowiedni zasilacz potrzebujemy najpierw znać parę rzeczy, takie jak: wymagane napięcie diody, jakie jest jej zapotrzebowanie prądowe. 
 Ze strony producenta wiemy, że wymagane napięcie wynosi 5V. Natomiast aby obliczyć zapotrzebowanie prądowe należe posłużyć się informacją, że
 te ledy dla 60diód na metr potrzebują 18W. Wymiary naszej taśmy to około 2.3m, co daje nam 18*2.3= 41.4W, gdzie przy napięciu 5V potrzebować będziemy 
@@ -57,7 +60,9 @@ Ostatnie co nam będzie potrzebne to złączki taśmowe 90 stopni, które pozwol
 ![img](./image/ArduinoSchemat.jpg)
 
 #Budowa i dalszy opis projektu
+
 Najpierw należy odmierzyć pasek ledów, tak aby na górze i po bokach był jeden cały pasek, a na dole monitora były dwa paski o mniej więcej takiej samej długości aby było miejsce na podłączenie wszystkiego do arduino.
+
 Następnie móżna przystąpić do klejenia ledów do wcześniej wyczyszczonego monitoram paski ledowe mają na sobie klej co ułatwia montaż. Podczas montażu posłużymy się również złączkami, których zasada działania jest banalnie prosta:
 
 ![img](./image/ZlaczkaZasadaDzialania.jpg)
@@ -77,8 +82,11 @@ Będziemy używać Arduino Nano z mikrokontrolerem ATMEGA328
 ![img](./image/ArduinoNanoPinout.jpg)
 
 Poprzez kabel Usb łączymy Arduino z naszym komputerem, do Pina D6 podłączamy na płytce stykowej przewód, który następnie będziemy musieli połączyć ze środkowym przewodem w ledach z jednej strony, jest to przewód przez który będziemy wydawać rozkazy ledom
+
 Do GND podłączamy przewód, który razem z dwoma przewodami GND z ledów łączymy we wtyku DC.
+
 Do Plusa we wtyku DC łączymy przewody oznaczone 5V z ledów i następnie zaciskamy przewody dokręcając w miejsach na śrubokręt.
+
 Poniżej zilustrowanie tego jak powinno to wszystko wyglądać:
 
 ![img](./image/ArduinoPodlaczenie.jpg)
@@ -306,7 +314,9 @@ Link:
 
 
 #Alterantywne zastosowanie ledów
+
 Jeszcze jedna bardzo ciekawa możliwość działania tych ledów to jako czujnik koloru Ambilight.
+
 Aby to zrobić, będziemy potrzebować kodu do arduino Adalight_WS2812, w którym będziemy musieli ustawić odpowiedni pin i liczbe ledów oraz programu Prismatik
 Menu programu Prismatik, w którym widać że jest on ustawiony na screen capture, czyli w zależności od tego co będzie się wyświetlało na ekranie na jego obwodzie to tak sie zaświecą ledy
 
@@ -325,7 +335,9 @@ Jeżeli jest to zrobione to możemy raczyć się niesamowitymi efektami świetln
 Filmik z domowej roboty Ambilight :
 
 #Napotkane problemy
+
 -Ledy nie gasną przy wyłączeniu się komputera:
+
 Rozwiązanie: dokupiłem Huba Usb z przyciskiem, do którego jest podłączony mikrokontroler, ponieważ jedyny sposób na zresetowanie ledów po wyłączeniu komputera to odpięcie i podpięcie kabla to o wiele wygoniejsze jest po prostu pstryknięcie przycisku.
 
 ![img](zdjęcia/Hub.jpg)
@@ -333,7 +345,9 @@ Rozwiązanie: dokupiłem Huba Usb z przyciskiem, do którego jest podłączony m
 [Link Rozdzielacz](https://allegro.pl/oferta/hub-usb-3-0-rozdzielacz-4-porty-usb-rozgaleznik-10569869994?snapshot=MjAyMS0xMi0xM1QxMzozMTozMi42NTlaO2J1eWVyOzI4NjBmMGFkZTRlNmI3MmMzODY1YTg4NTAzNDZiYTBiZWFmNWRjNmUyNGVmMTM0YmFlYmNmODg1MDFkMmYyZGI%3D)
 
 -Po odłączeniu i podłączeniu mikrokontrolera, program prismatik przestaje działać i należy go zresetować.
+
 Rozwiązanie: tutaj również rozwiązanie jest tylko półśrodkiem, ponieważ polega na napisaniu krótkiego kodu w powershellu i zbindowania go pod jakiś klawisz myszki, aby był łatwo i szybko dostępny bez potrzeby minusowania tego co się robiło i kasowania i odpalania na nowo programu.
+
 Kod prezentuje się następująco:
 
 ```cp
