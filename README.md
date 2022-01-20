@@ -343,8 +343,6 @@ Następnie należy również dobrać odpwiednie wartości dla ledów, tak aby na
 
 Jeżeli jest to zrobione to możemy raczyć się niesamowitymi efektami świetlnymi w grach oraz podczas korzystania z youtube :)
 
-Filmik z domowej roboty Ambilight :
-
 # Napotkane problemy
 
 -Ledy nie gasną przy wyłączeniu się komputera:
